@@ -1,0 +1,3 @@
+D:/Dokumenty/C++/DatabaseCpp/build/CMakeFiles/database.dir
+D:/Dokumenty/C++/DatabaseCpp/build/CMakeFiles/ALL_BUILD.dir
+D:/Dokumenty/C++/DatabaseCpp/build/CMakeFiles/ZERO_CHECK.dir
