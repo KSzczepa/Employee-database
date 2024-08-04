@@ -1,11 +1,9 @@
 #pragma once
 #include "employee.hpp"
 
-enum class Gender {
-    Male,
-    Female
-};
-
 class Database {
-    Gender g;
+public:
+    bool add(const Employee & empl);
+private:
+    bool isAdded_ = false;
 };
