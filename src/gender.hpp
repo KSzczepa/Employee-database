@@ -20,3 +20,14 @@ std::ostream& operator<<(std::ostream& os, const Gender& gender) {
     }
     return os;
 }
+
+std::string genderToString(const Gender& gender) {
+    switch (gender) {
+        case Gender::Male:
+            return "Male";
+        case Gender::Female:
+            return "Female";
+        default:
+            return "Unknown";
+    }
+}

@@ -9,5 +9,5 @@ Employee::Employee(std::string name,
     ) {};
 
 std::string Employee::show(void) {
-    return name_ + " " + lastName_ + "; " + address_ + "; " + std::to_string(number_) + "; " + function_ + "; " + gender_;
+    return name_ + " " + lastName_ + "; " + address_ + "; " + std::to_string(number_) + "; " + function_ + "; " + genderToString(gender_);
 };
