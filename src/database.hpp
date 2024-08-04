@@ -1,11 +1,12 @@
 #pragma once
 #include "employee.hpp"
+#include <vector>
 
 class Database {
 public:
-    bool add(const Employee & empl);
+    void add(const Employee & empl);
     void display(void);
     std::string show(void);
 private:
-    bool isAdded_ = false;
+    std::vector<Employee> employees_;
 };

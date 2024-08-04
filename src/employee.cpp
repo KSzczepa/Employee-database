@@ -7,3 +7,8 @@ Employee::Employee(std::string name,
     std::string pesel,
     Gender gender
     ) {};
+
+std::string Employee::show(void) {
+    
+    return "";
+};

@@ -1,18 +1,9 @@
 #include "database.hpp"
 #include <iostream>
 
-bool Database::add(const Employee &empl)
+void Database::add(const Employee &empl)
 {
-    if (isAdded_)
-    {
-        return false;
-    }
-    else
-    {
-        isAdded_ = true;
-        return true;
-    }
-    // return !isAdded_;
+    employees_.push_back(empl);
 };
 
 void Database::display(void)
@@ -21,5 +12,9 @@ void Database::display(void)
 };
 
 std::string Database::show(void) {
-    return "";
+    std::string result = "";
+    for (auto && empleyee : employees_) {
+        result += empleyee.show();
+    }
+    return result;
 };
