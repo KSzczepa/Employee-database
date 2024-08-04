@@ -1,12 +1,7 @@
 #pragma once
 #include <string>
 #include "database.hpp"
-
-enum class Gender
-{
-    Male,
-    Female
-};
+#include "gender.hpp"
 
 class Employee
 {
@@ -15,8 +10,8 @@ public:
              std::string lastName,
              std::string address,
              int number,
-             std::string pesel,
-             Gender gender);
+             std::string function,
+             Gender gender) : name_(name), lastName_(lastName), address_(address), number_(number), function_(function), gender_(gender) {};
     std::string show(void);
 
 private:
@@ -24,6 +19,6 @@ private:
     std::string lastName_;
     std::string address_;
     int number_;
-    std::string pesel_;
+    std::string function_;
     Gender gender_;
 };
