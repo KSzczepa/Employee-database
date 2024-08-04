@@ -1,3 +1,5 @@
 build
 build/
 *.o
+_deps
+_deps/
