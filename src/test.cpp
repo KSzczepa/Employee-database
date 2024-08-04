@@ -14,7 +14,7 @@ TEST(DatabaseTest, DisplayEmptyDb) {
 }
 
 TEST(DatabaseTest, DisplayNonEmptyDb) {
-	Employee adam {"Adam", "Kowalsko", "ul. Dluga 15, 45-030 Opole", 123497, "11223300558", Gender::Male};
+	Employee adam {"Adam", "Kowalsko", "ul. Dluga 15, 45-030 Opole", 123497, "HR Specialist", Gender::Male};
 	db.add(adam);
 
     auto content = db.show();
