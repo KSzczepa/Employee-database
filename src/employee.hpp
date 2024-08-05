@@ -1,6 +1,5 @@
 #pragma once
 #include <string>
-#include "database.hpp"
 #include "gender.hpp"
 
 class Employee
